@@ -1,0 +1,12 @@
+prefix=
+exec_prefix=
+libdir=${pcfiledir}/../../../libavcodec
+includedir=${pcfiledir}/../../..
+
+Name: libavcodec
+Description: FFmpeg codec library
+Version: 56.0.101
+Requires: libswresample >= 1.1.100, libavutil >= 54.6.100
+Conflicts:
+Libs: -L${libdir} -Wl,-rpath,${libdir} -lavcodec -lX11 -lasound -lx264 -lv4l2 -lpulse -lmp3lame -lm -lz -pthread -lrt
+Cflags: -I${includedir}

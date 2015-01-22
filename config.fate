@@ -1,0 +1,1 @@
+config:arm:armv7a:armv7-a:linux:gcc 4.6 (Debian 4.6.3-14):--prefix=/usr --enable-nonfree --enable-gpl --enable-version3 --enable-vdpau --enable-libx264 --enable-libmp3lame --enable-libpulse --enable-libv4l2
