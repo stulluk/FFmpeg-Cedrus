@@ -1,3 +1,17 @@
+FFMpeg for Cedrus on Allwinner devices with sunxi kernel Based on increadible work with jemk and alcantor, we managed to update FFmpeg to include cedrus264 hardware encoder. Now it encodes I and P frames, and support resolutions up to 1080p
+
+To us it, clone the repository, and configure by:
+
+./configure --prefix=/usr --enable-nonfree --enable-gpl --enable-version3 --enable-vdpau --enable-libx264 --enable-libmp3lame --enable-libpulse --enable-libv4l2
+
+and then, make && make install
+
+Alternatively, you can install "checkinstall" package on your target, and create a deb package for easy distribution.
+
+You may download my deb package here also.
+
+
+
 FFmpeg README
 =============
 
